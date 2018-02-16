@@ -1,0 +1,56 @@
+/* Ingore this */
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#intro {
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#intro li {
+	padding: 20px;
+}
+
+/* USE THIS! */
+
+#arrows {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+#arrows.initialized {
+	opacity: 1;
+}
+#arrows path {
+	fill: rgb(220,220,220);
+}
+#arrows line {
+	stroke: rgb(220,220,220);
+	stroke-width: 2;
+}
+#arrows polyline {
+	stroke: rgb(220,220,220);
+	stroke-linejoin: round;
+	stroke-width: 2;
+	fill: none;
+}
+#buttons {
+	background-color: pink;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	padding: 40px;
+}
